@@ -1,5 +1,3 @@
-
-
 module Parser
 require_relative 'mexican_restaurant'
 require 'open-uri'
@@ -17,6 +15,3 @@ require 'json'
     parse_api.map{|obj| Mexican_restaurant.new(obj) }
   end
 end
-
-# this.each {|i| p i.class}
-    p Parser.generate_restaurants

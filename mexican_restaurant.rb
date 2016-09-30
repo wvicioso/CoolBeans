@@ -1,5 +1,5 @@
 class Mexican_restaurant
-  attr_reader :name, :address, :zipcode
+  attr_reader :dba, :zipcode, :building, :boro, :phone, :street
 
   def initialize(args={})
     @dba = args.fetch("dba")

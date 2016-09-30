@@ -1,7 +1,7 @@
-require_relative 'mexican_restaurant.rb'
-require_relative 'view.rb'
-require_relative 'parser.rb'
-require_relative 'restaurants.rb'
-require_relative 'control.rb'
+require_relative 'mexican_restaurant'
+require_relative 'view'
+require_relative 'parser'
+require_relative 'restaurants'
+require_relative 'control'
 
-Controller.run
+control = Controller.new

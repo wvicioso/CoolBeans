@@ -1,13 +1,13 @@
 class Restaurants
-  attr_writer :restaurants
+  attr_reader :restaurants
 
   def initialize(args={})
     @restaurants = args.fetch(:rest)
   end
 
 
-  def local_restaurant(zipcode)
-    restaurants.select {|rest| [rest.name, rest.address] if rest.zipcode == zipcode}
+  def local_restaurants(zipcode)
+    restaurants.map {|rest| [rest.dba + "\n" + rest.address + "\n\n"] if rest.zipcode == zipcode}.compact.uniq
   end
 
 end
